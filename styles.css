@@ -223,6 +223,28 @@ a.card:hover {
   background: rgba(255,255,255,0.1);
 }
 
+/* ===== SECTION DIVIDER ===== */
+.section-divider {
+  grid-column: span 3;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 8px 0 4px;
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.section-sub {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
 /* ===== STACK CARD ===== */
 .stack-card {
   background: #fff;
@@ -305,6 +327,7 @@ a.card:hover {
   }
   .card-lg { grid-column: span 2; grid-row: span 1; }
   .card-md { grid-column: span 1; grid-row: span 1; }
+  .section-divider { grid-column: span 2; }
 }
 
 @media (max-width: 600px) {
@@ -323,6 +346,7 @@ a.card:hover {
     grid-column: span 1;
     grid-row: span 1;
   }
+  .section-divider { grid-column: span 1; }
   .card { padding: 22px; min-height: 160px; }
   .card-top { top: 18px; left: 22px; right: 22px; }
 }
