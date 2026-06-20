@@ -3,181 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>alnyx — portfolio</title>
-  <meta name="description" content="alnyx-dev — developer portfolio. Rust, C#, JavaScript, Unity games.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0A12'/%3E%3Ctext x='50%25' y='54%25' font-size='20' font-weight='900' fill='%234D5FFF' font-family='Arial' text-anchor='middle' dominant-baseline='central'%3Ea%3C/text%3E%3C/svg%3E">
+  <title>alnyx — index</title>
+  <meta name="description" content="alnyx-dev — software & games. Rust, C#, JavaScript, Unity. An index of work.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121009'/%3E%3Ctext x='50%25' y='56%25' font-size='22' font-weight='700' fill='%23C6452F' font-family='Georgia,serif' text-anchor='middle' dominant-baseline='central'%3Ea%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="sheet">
 
-  <!-- HEADER -->
-  <header class="hero">
-    <div class="hero-inner">
-      <h1 class="hero-title">alnyx<span class="hero-dot">.</span></h1>
-      <p class="hero-sub">developer &nbsp;·&nbsp; rust &nbsp;·&nbsp; c# &nbsp;·&nbsp; unity &nbsp;·&nbsp; full-stack</p>
+  <!-- UTILITY LINE -->
+  <div class="util">
+    <span>alnyx.dev</span>
+    <span class="util-mid">— index of work —</span>
+    <span>№&nbsp;2026</span>
+  </div>
+
+  <!-- MASTHEAD -->
+  <header class="mast">
+    <h1 class="word">alnyx<span class="period">.</span></h1>
+    <div class="mast-side">
+      <p class="lede">Developer of fast, low-level software and small games. I build installers, desktop tools and engines — and ship games under two studios.</p>
+      <dl class="facts">
+        <div><dt>Disciplines</dt><dd>Systems · Desktop · Gamedev</dd></div>
+        <div><dt>Languages</dt><dd>Rust · C# · JavaScript</dd></div>
+        <div><dt>Profiles</dt><dd>alnyx-dev · Kavun Studio · ComRats</dd></div>
+      </dl>
     </div>
-    <a href="https://github.com/alnyx-dev" target="_blank" rel="noopener" class="hero-github">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.85 1.22 1.85 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.3-5.47-5.81 0-1.28.47-2.33 1.23-3.15-.12-.3-.53-1.51.12-3.15 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.28-1.51 3.29-1.2 3.29-1.2.65 1.64.24 2.85.12 3.15.77.82 1.23 1.87 1.23 3.15 0 4.52-2.81 5.51-5.49 5.8.43.36.81 1.08.81 2.18v3.24c0 .31.22.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5Z"/></svg>
-      <span>github.com/alnyx-dev</span>
-    </a>
   </header>
 
-  <!-- BENTO GRID -->
-  <main class="bento">
+  <!-- NAV -->
+  <nav class="contents">
+    <a href="#software"><span class="c-no">01</span> Software</a>
+    <a href="#games"><span class="c-no">02</span> Games</a>
+    <a href="#stack"><span class="c-no">03</span> Stack</a>
+    <a href="#contact"><span class="c-no">04</span> Contact</a>
+  </nav>
 
-    <!-- Find-My-Modpack — featured (wide) -->
-    <a class="card card-wide accent-blue" href="https://github.com/alnyx-dev/Find-My-Modpack" target="_blank" rel="noopener">
-      <div class="card-top">
-        <span class="card-lang">JavaScript</span>
-        <span class="card-stars">★ 3</span>
-      </div>
-      <h2 class="card-title">Find My Modpack</h2>
-      <p class="card-desc">AI-powered natural language search for Minecraft modpacks on Modrinth — 3-phase pipeline with live streaming results.</p>
-      <div class="card-tags"><span>Node.js</span><span>Express</span><span>SQLite</span><span>SSE</span></div>
-    </a>
-
-    <!-- SetupWeaver -->
-    <a class="card accent-green" href="https://github.com/alnyx-dev/SetupWeaver" target="_blank" rel="noopener">
-      <div class="card-top">
-        <span class="card-lang">Rust</span>
-        <span class="card-stars">★ 3</span>
-      </div>
-      <h2 class="card-title">SetupWeaver</h2>
-      <p class="card-desc">Modern Windows installer builder — a single self-contained setup.exe from a simple install.toml.</p>
-    </a>
-
-    <!-- FluentYTDLP -->
-    <a class="card dark" href="https://github.com/alnyx-dev/FluentYTDLP" target="_blank" rel="noopener">
-      <div class="card-top">
-        <span class="card-lang">C#</span>
-        <span class="card-stars">★ 1</span>
-      </div>
-      <h2 class="card-title">FluentYTDLP</h2>
-      <p class="card-desc">Desktop video &amp; audio downloader built on yt-dlp with a Windows 11 Fluent / WinUI 3 interface.</p>
-    </a>
-
-    <!-- UrlShortene -->
-    <a class="card accent-coral" href="https://github.com/alnyx-dev/UrlShortene" target="_blank" rel="noopener">
-      <div class="card-top">
-        <span class="card-lang">C#</span>
-        <span class="card-stars">★ 0</span>
-      </div>
-      <h2 class="card-title">UrlShortene</h2>
-      <p class="card-desc">URL shortener with clean architecture — API, Application, Domain, Infrastructure layers, Docker-ready.</p>
-    </a>
-
-    <!-- DinoGame-Reborn -->
-    <a class="card dark" href="https://github.com/alnyx-dev/DinoGame-Reborn" target="_blank" rel="noopener">
-      <div class="card-top">
-        <span class="card-lang">C# / Unity</span>
-      </div>
-      <h2 class="card-title">DinoGame: Reborn</h2>
-      <p class="card-desc">A reimagined take on the classic Chrome dino game, built in Unity.</p>
-    </a>
-
-    <!-- GAMES SECTION DIVIDER -->
-    <div class="section-divider">
-      <h2 class="section-title">Games</h2>
-      <span class="section-sub">Kavun Studio &nbsp;·&nbsp; ComRats</span>
+  <!-- 01 SOFTWARE -->
+  <section id="software" class="block">
+    <div class="block-head">
+      <span class="block-no">01</span>
+      <h2 class="block-title">Software</h2>
+      <span class="block-count">five projects</span>
     </div>
 
-    <!-- Echo-of-the-Rift — featured (wide) -->
-    <a class="card card-wide dark" href="https://github.com/ComRats/Echo-of-the-Rift" target="_blank" rel="noopener">
-      <div class="card-top">
-        <span class="card-lang">C# / Unity</span>
-        <span class="card-stars">★ 4</span>
-      </div>
-      <h2 class="card-title">Echo of the Rift</h2>
-      <p class="card-desc">RPG adventure game built in Unity by ComRats — the studio's flagship project with the most community traction.</p>
-      <div class="card-tags"><span>Unity</span><span>C#</span><span>RPG</span></div>
-    </a>
+    <ul class="index">
+      <li><a class="row" href="https://github.com/alnyx-dev/Find-My-Modpack" target="_blank" rel="noopener">
+        <span class="r-no">01</span>
+        <span class="r-main"><span class="r-name">Find My Modpack</span><span class="r-desc">Natural-language search for Minecraft modpacks on Modrinth — a three-phase pipeline with live streaming results.</span></span>
+        <span class="r-tech">Node.js / Express / SQLite</span>
+        <span class="r-lang">JavaScript</span>
+        <span class="r-stars">★3</span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/alnyx-dev/SetupWeaver" target="_blank" rel="noopener">
+        <span class="r-no">02</span>
+        <span class="r-main"><span class="r-name">SetupWeaver</span><span class="r-desc">A single self-contained Windows setup.exe built from a simple install.toml — blazing-fast and modern.</span></span>
+        <span class="r-tech">Rust / Slint / zstd / Win32</span>
+        <span class="r-lang">Rust</span>
+        <span class="r-stars">★3</span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/alnyx-dev/FluentYTDLP" target="_blank" rel="noopener">
+        <span class="r-no">03</span>
+        <span class="r-main"><span class="r-name">FluentYTDLP</span><span class="r-desc">A desktop video &amp; audio downloader on top of yt-dlp, wrapped in a Windows&nbsp;11 Fluent / WinUI&nbsp;3 interface.</span></span>
+        <span class="r-tech">.NET 8 / WinUI 3 / MVVM</span>
+        <span class="r-lang">C#</span>
+        <span class="r-stars">★1</span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/alnyx-dev/UrlShortene" target="_blank" rel="noopener">
+        <span class="r-no">04</span>
+        <span class="r-main"><span class="r-name">UrlShortene</span><span class="r-desc">A URL shortener built on clean architecture — API, Application, Domain and Infrastructure layers, Docker-ready.</span></span>
+        <span class="r-tech">ASP.NET / Docker</span>
+        <span class="r-lang">C#</span>
+        <span class="r-stars">★0</span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/alnyx-dev/DinoGame-Reborn" target="_blank" rel="noopener">
+        <span class="r-no">05</span>
+        <span class="r-main"><span class="r-name">DinoGame: Reborn</span><span class="r-desc">A reimagined take on the classic Chrome dino game, built in Unity.</span></span>
+        <span class="r-tech">Unity</span>
+        <span class="r-lang">C#</span>
+        <span class="r-stars"></span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+    </ul>
+  </section>
 
-    <!-- Puzzle -->
-    <a class="card accent-green" href="https://github.com/Kavun-Studio/Puzzle" target="_blank" rel="noopener">
-      <div class="card-top"><span class="card-lang">C# / Unity</span></div>
-      <h2 class="card-title">Puzzle</h2>
-      <p class="card-desc">Puzzle game template, built solo in Unity.</p>
-    </a>
-
-    <!-- Obby-3D — featured (wide) -->
-    <a class="card card-wide accent-coral" href="https://github.com/Kavun-Studio/Obby-3D" target="_blank" rel="noopener">
-      <div class="card-top"><span class="card-lang">C# / Unity</span></div>
-      <h2 class="card-title">Obby 3D</h2>
-      <p class="card-desc">3D parkour obby game in Unity — jump, climb and navigate through obstacle courses.</p>
-      <div class="card-tags"><span>Unity</span><span>3D</span><span>Parkour</span></div>
-    </a>
-
-    <!-- HyperCasualRunner -->
-    <a class="card dark" href="https://github.com/Kavun-Studio/HyperCasualRunner" target="_blank" rel="noopener">
-      <div class="card-top"><span class="card-lang">ShaderLab / Unity</span></div>
-      <h2 class="card-title">Hyper Casual Runner</h2>
-      <p class="card-desc">Hyper-casual runner template for future games, built solo.</p>
-    </a>
-
-    <!-- Undartale -->
-    <a class="card accent-blue" href="https://github.com/ComRats/Undartale" target="_blank" rel="noopener">
-      <div class="card-top"><span class="card-lang">ShaderLab / Unity</span></div>
-      <h2 class="card-title">Undartale</h2>
-      <p class="card-desc">Undertale-inspired game project by ComRats.</p>
-    </a>
-
-    <!-- 3DMayProject -->
-    <a class="card dark" href="https://github.com/ComRats/3DMayProject" target="_blank" rel="noopener">
-      <div class="card-top"><span class="card-lang">ShaderLab / Unity</span></div>
-      <h2 class="card-title">3D May Project</h2>
-      <p class="card-desc">3D game project by Kavun Studio — currently in development.</p>
-    </a>
-
-    <!-- ShieldOfDesert -->
-    <a class="card accent-coral" href="https://github.com/ComRats/ShieldOfDesert" target="_blank" rel="noopener">
-      <div class="card-top"><span class="card-lang">C# / Unity</span></div>
-      <h2 class="card-title">Shield of Desert</h2>
-      <p class="card-desc">Military-themed desert combat game by ComRats.</p>
-    </a>
-
-    <!-- TECH STACK — featured (wide) -->
-    <div class="card card-wide stack-card">
-      <h2 class="card-title">Tech Stack</h2>
-      <div class="stack-grid">
-        <span class="chip">Rust</span><span class="chip">C#</span><span class="chip">.NET 8</span>
-        <span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">Express</span>
-        <span class="chip">SQLite</span><span class="chip">WinUI 3</span><span class="chip">Slint</span>
-        <span class="chip">Unity</span><span class="chip">ShaderLab</span><span class="chip">Docker</span>
-        <span class="chip">zstd</span><span class="chip">SSE</span><span class="chip">Clean Architecture</span><span class="chip">MVVM</span>
-      </div>
+  <!-- 02 GAMES -->
+  <section id="games" class="block">
+    <div class="block-head">
+      <span class="block-no">02</span>
+      <h2 class="block-title">Games</h2>
+      <span class="block-count">Kavun Studio · ComRats</span>
     </div>
 
-    <!-- CONTACT -->
-    <div class="card contact-card dark">
-      <h2 class="card-title">Contact</h2>
-      <div class="contact-links">
-        <a href="https://github.com/alnyx-dev" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.85 1.22 1.85 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.3-5.47-5.81 0-1.28.47-2.33 1.23-3.15-.12-.3-.53-1.51.12-3.15 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.28-1.51 3.29-1.2 3.29-1.2.65 1.64.24 2.85.12 3.15.77.82 1.23 1.87 1.23 3.15 0 4.52-2.81 5.51-5.49 5.8.43.36.81 1.08.81 2.18v3.24c0 .31.22.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5Z"/></svg>
-          alnyx-dev
-        </a>
-        <a href="https://github.com/Kavun-Studio" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.85 1.22 1.85 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.3-5.47-5.81 0-1.28.47-2.33 1.23-3.15-.12-.3-.53-1.51.12-3.15 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.28-1.51 3.29-1.2 3.29-1.2.65 1.64.24 2.85.12 3.15.77.82 1.23 1.87 1.23 3.15 0 4.52-2.81 5.51-5.49 5.8.43.36.81 1.08.81 2.18v3.24c0 .31.22.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5Z"/></svg>
-          Kavun Studio
-        </a>
-        <a href="https://github.com/ComRats" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.85 1.22 1.85 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.3-5.47-5.81 0-1.28.47-2.33 1.23-3.15-.12-.3-.53-1.51.12-3.15 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.28-1.51 3.29-1.2 3.29-1.2.65 1.64.24 2.85.12 3.15.77.82 1.23 1.87 1.23 3.15 0 4.52-2.81 5.51-5.49 5.8.43.36.81 1.08.81 2.18v3.24c0 .31.22.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5Z"/></svg>
-          ComRats
-        </a>
-        <a href="mailto:alnyx-dev@users.noreply.github.com">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
-          Email
-        </a>
-      </div>
+    <ul class="index">
+      <li><a class="row" href="https://github.com/ComRats/Echo-of-the-Rift" target="_blank" rel="noopener">
+        <span class="r-no">01</span>
+        <span class="r-main"><span class="r-name">Echo of the Rift</span><span class="r-desc">An RPG adventure built in Unity — ComRats' flagship and most community-traction project to date.</span></span>
+        <span class="r-tech">ComRats</span>
+        <span class="r-lang">C# / Unity</span>
+        <span class="r-stars">★4</span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/Kavun-Studio/Obby-3D" target="_blank" rel="noopener">
+        <span class="r-no">02</span>
+        <span class="r-main"><span class="r-name">Obby 3D</span><span class="r-desc">A 3D parkour obby — jump, climb and navigate through obstacle courses.</span></span>
+        <span class="r-tech">Kavun Studio</span>
+        <span class="r-lang">C# / Unity</span>
+        <span class="r-stars"></span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/Kavun-Studio/Puzzle" target="_blank" rel="noopener">
+        <span class="r-no">03</span>
+        <span class="r-main"><span class="r-name">Puzzle</span><span class="r-desc">A puzzle game template, built solo in Unity.</span></span>
+        <span class="r-tech">Kavun Studio</span>
+        <span class="r-lang">C# / Unity</span>
+        <span class="r-stars"></span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/Kavun-Studio/HyperCasualRunner" target="_blank" rel="noopener">
+        <span class="r-no">04</span>
+        <span class="r-main"><span class="r-name">Hyper Casual Runner</span><span class="r-desc">A hyper-casual runner template for future games, built solo.</span></span>
+        <span class="r-tech">Kavun Studio</span>
+        <span class="r-lang">ShaderLab / Unity</span>
+        <span class="r-stars"></span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/ComRats/Undartale" target="_blank" rel="noopener">
+        <span class="r-no">05</span>
+        <span class="r-main"><span class="r-name">Undartale</span><span class="r-desc">An Undertale-inspired game project by ComRats.</span></span>
+        <span class="r-tech">ComRats</span>
+        <span class="r-lang">ShaderLab / Unity</span>
+        <span class="r-stars"></span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/ComRats/3DMayProject" target="_blank" rel="noopener">
+        <span class="r-no">06</span>
+        <span class="r-main"><span class="r-name">3D May Project</span><span class="r-desc">A 3D game project by Kavun Studio — currently in development.</span></span>
+        <span class="r-tech">Kavun Studio</span>
+        <span class="r-lang">ShaderLab / Unity</span>
+        <span class="r-stars"></span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+      <li><a class="row" href="https://github.com/ComRats/ShieldOfDesert" target="_blank" rel="noopener">
+        <span class="r-no">07</span>
+        <span class="r-main"><span class="r-name">Shield of Desert</span><span class="r-desc">A military-themed desert combat game by ComRats.</span></span>
+        <span class="r-tech">ComRats</span>
+        <span class="r-lang">C# / Unity</span>
+        <span class="r-stars"></span>
+        <span class="r-go" aria-hidden="true">↗</span>
+      </a></li>
+    </ul>
+  </section>
+
+  <!-- 03 STACK -->
+  <section id="stack" class="block">
+    <div class="block-head">
+      <span class="block-no">03</span>
+      <h2 class="block-title">Stack</h2>
+      <span class="block-count">tools of the trade</span>
     </div>
 
-  </main>
+    <dl class="spec">
+      <div class="spec-row"><dt>Languages</dt><dd>Rust, C#, JavaScript</dd></div>
+      <div class="spec-row"><dt>Runtime &amp; web</dt><dd>.NET&nbsp;8, ASP.NET, Node.js, Express, SSE</dd></div>
+      <div class="spec-row"><dt>Desktop UI</dt><dd>WinUI&nbsp;3, Slint, Win32</dd></div>
+      <div class="spec-row"><dt>Game</dt><dd>Unity, ShaderLab</dd></div>
+      <div class="spec-row"><dt>Data &amp; infra</dt><dd>SQLite, Docker, zstd</dd></div>
+      <div class="spec-row"><dt>Architecture</dt><dd>Clean Architecture, MVVM</dd></div>
+    </dl>
+  </section>
 
-  <footer class="footer">
-    <p>built with static HTML &amp; CSS · hosted on GitHub Pages</p>
+  <!-- 04 CONTACT -->
+  <section id="contact" class="block">
+    <div class="block-head">
+      <span class="block-no">04</span>
+      <h2 class="block-title">Contact</h2>
+      <span class="block-count">say hello</span>
+    </div>
+
+    <ul class="links">
+      <li><a href="https://github.com/alnyx-dev" target="_blank" rel="noopener"><span class="l-key">GitHub</span><span class="l-val">github.com/alnyx-dev</span><span class="l-go">↗</span></a></li>
+      <li><a href="https://github.com/Kavun-Studio" target="_blank" rel="noopener"><span class="l-key">Studio</span><span class="l-val">github.com/Kavun-Studio</span><span class="l-go">↗</span></a></li>
+      <li><a href="https://github.com/ComRats" target="_blank" rel="noopener"><span class="l-key">Studio</span><span class="l-val">github.com/ComRats</span><span class="l-go">↗</span></a></li>
+      <li><a href="mailto:alnyx-dev@users.noreply.github.com"><span class="l-key">Email</span><span class="l-val">alnyx-dev@users.noreply.github.com</span><span class="l-go">↗</span></a></li>
+    </ul>
+  </section>
+
+  <footer class="colophon">
+    <span>Set in Newsreader &amp; JetBrains&nbsp;Mono.</span>
+    <span>Static HTML &amp; CSS · GitHub Pages.</span>
   </footer>
 
+</div>
 </body>
 </html>
