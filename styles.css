@@ -12,6 +12,8 @@
   --muted:   #6E685B;   /* faded ink            */
   --line:    #C9C2B2;   /* hairline rules       */
   --accent:  #C1432B;   /* vermilion            */
+  --on-ink:      #ECE7DC;            /* text over inverted rows */
+  --on-ink-dim:  rgba(236,231,220,0.74);
   --maxw: 1120px;
 }
 
@@ -23,6 +25,8 @@
     --muted:   #948D7D;
     --line:    #34322A;
     --accent:  #E0613F;
+    --on-ink:      #14130E;           /* inverted row bg is light in dark mode */
+    --on-ink-dim:  rgba(20,19,14,0.70);
   }
 }
 
@@ -171,7 +175,7 @@ a { color: inherit; text-decoration: none; }
 .row:hover,
 .row:focus-visible {
   background: var(--ink);
-  color: var(--paper);
+  color: var(--on-ink);
   outline: none;
   padding-left: 28px;
 }
@@ -201,7 +205,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
   max-width: 62ch;
 }
-.row:hover .r-desc, .row:focus-visible .r-desc { color: rgba(236,231,220,0.78); }
+.row:hover .r-desc, .row:focus-visible .r-desc { color: var(--on-ink-dim); }
 
 .r-tech, .r-lang {
   font-size: 11px;
@@ -211,8 +215,8 @@ a { color: inherit; text-decoration: none; }
   align-self: center;
 }
 .r-lang { color: var(--ink); }
-.row:hover .r-tech, .row:focus-visible .r-tech { color: rgba(236,231,220,0.7); }
-.row:hover .r-lang, .row:focus-visible .r-lang { color: var(--paper); }
+.row:hover .r-tech, .row:focus-visible .r-tech { color: var(--on-ink-dim); }
+.row:hover .r-lang, .row:focus-visible .r-lang { color: var(--on-ink); }
 
 .r-stars {
   font-size: 12px;
@@ -268,7 +272,7 @@ a { color: inherit; text-decoration: none; }
 }
 .links a:hover, .links a:focus-visible {
   background: var(--ink);
-  color: var(--paper);
+  color: var(--on-ink);
   outline: none;
   padding-left: 28px;
 }
