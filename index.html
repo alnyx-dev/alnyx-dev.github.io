@@ -1,34 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>alnyx — portfolio</title>
-  <meta name="description" content="alnyx-dev — developer portfolio. Rust, C#, JavaScript, Unity games.">
+  <title>alnyx — developer portfolio</title>
+  <meta name="description" content="alnyx-dev — developer portfolio. Rust, C#, JavaScript & Unity games. Building fast tools and playful games.">
+  <meta name="author" content="alnyx-dev">
+  <meta name="theme-color" content="#0a0a12">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="alnyx — developer portfolio">
+  <meta property="og:description" content="Developer portfolio — Rust, C#, JavaScript & Unity games.">
+  <meta property="og:url" content="https://alnyx-dev.github.io/">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0a12'/%3E%3Ctext x='50%25' y='53%25' font-size='20' font-weight='900' fill='%234D5FFF' font-family='Arial' text-anchor='middle' dominant-baseline='central'%3Ea%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="hero">
-    <div class="hero-inner">
-      <h1 class="hero-title">alnyx<span class="hero-dot">.</span></h1>
-      <p class="hero-sub">developer &nbsp;·&nbsp; rust &nbsp;·&nbsp; c# &nbsp;·&nbsp; unity &nbsp;·&nbsp; full-stack</p>
+  <!-- Animated gradient background -->
+  <div class="bg-canvas" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <span class="grain"></span>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- STICKY NAV -->
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-brand" href="#top">alnyx<span class="dot">.</span></a>
+    <div class="nav-actions">
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#games">Games</a>
+      <a class="nav-link" href="#stack">Stack</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
-    <a href="https://github.com/alnyx-dev" target="_blank" rel="noopener" class="hero-github">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.85 1.22 1.85 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.3-5.47-5.81 0-1.28.47-2.33 1.23-3.15-.12-.3-.53-1.51.12-3.15 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.28-1.51 3.29-1.2 3.29-1.2.65 1.64.24 2.85.12 3.15.77.82 1.23 1.87 1.23 3.15 0 4.52-2.81 5.51-5.49 5.8.43.36.81 1.08.81 2.18v3.24c0 .31.22.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5Z"/></svg>
-      <span>github.com/alnyx-dev</span>
-    </a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-badge reveal">
+        <span class="pulse"></span> available for collaboration
+      </div>
+      <h1 class="hero-title reveal">alnyx<span class="hero-dot">.</span></h1>
+      <p class="hero-sub reveal">Developer building fast tools &amp; playful games.<br>Rust&nbsp;· C#&nbsp;· JavaScript&nbsp;· Unity</p>
+
+      <div class="hero-cta reveal">
+        <a href="#work" class="btn btn-primary">View work</a>
+        <a href="https://github.com/alnyx-dev" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.85 1.22 1.85 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.3-5.47-5.81 0-1.28.47-2.33 1.23-3.15-.12-.3-.53-1.51.12-3.15 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.28-1.51 3.29-1.2 3.29-1.2.65 1.64.24 2.85.12 3.15.77.82 1.23 1.87 1.23 3.15 0 4.52-2.81 5.51-5.49 5.8.43.36.81 1.08.81 2.18v3.24c0 .31.22.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5Z"/></svg>
+          github.com/alnyx-dev
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="11" data-suffix="">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="11" data-suffix="">0</span>
+          <span class="stat-label">GitHub Stars</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="3" data-suffix="">0</span>
+          <span class="stat-label">Orgs &amp; Studios</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="6" data-suffix="+">0</span>
+          <span class="stat-label">Languages</span>
+        </div>
+      </div>
+    </div>
   </header>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar reveal" id="work">
+    <span class="filter-label">Filter</span>
+    <div class="filter-chips" role="tablist" aria-label="Filter projects">
+      <button class="filter-chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-chip" data-filter="app" role="tab" aria-selected="false">Apps &amp; Tools</button>
+      <button class="filter-chip" data-filter="game" role="tab" aria-selected="false">Games</button>
+    </div>
+  </div>
 
   <!-- BENTO GRID -->
   <main class="bento">
 
-    <!-- Find-My-Modpack — large featured card -->
-    <a class="card card-lg accent-blue" href="https://github.com/alnyx-dev/Find-My-Modpack" target="_blank" rel="noopener">
+    <a class="card card-lg accent-blue reveal" data-category="app" href="https://github.com/alnyx-dev/Find-My-Modpack" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">JavaScript</span>
         <span class="card-stars">★ 3</span>
@@ -38,10 +112,10 @@
       <div class="card-tags">
         <span>Node.js</span><span>Express</span><span>SQLite</span><span>SSE</span>
       </div>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- SetupWeaver — large featured card -->
-    <a class="card card-lg accent-green" href="https://github.com/alnyx-dev/SetupWeaver" target="_blank" rel="noopener">
+    <a class="card card-lg accent-green reveal" data-category="app" href="https://github.com/alnyx-dev/SetupWeaver" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">Rust</span>
         <span class="card-stars">★ 3</span>
@@ -51,23 +125,23 @@
       <div class="card-tags">
         <span>Rust</span><span>Slint UI</span><span>zstd</span><span>Win32</span>
       </div>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- FluentYTDLP — medium card, dark -->
-    <a class="card card-md dark" href="https://github.com/alnyx-dev/FluentYTDLP" target="_blank" rel="noopener">
+    <a class="card card-md dark reveal" data-category="app" href="https://github.com/alnyx-dev/FluentYTDLP" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">C#</span>
         <span class="card-stars">★ 1</span>
       </div>
       <h2 class="card-title">FluentYTDLP</h2>
-      <p class="card-desc">Modern desktop video & audio downloader built on yt-dlp with a Windows 11 Fluent / WinUI 3 interface.</p>
+      <p class="card-desc">Modern desktop video &amp; audio downloader built on yt-dlp with a Windows 11 Fluent / WinUI 3 interface.</p>
       <div class="card-tags">
         <span>.NET 8</span><span>WinUI 3</span><span>MVVM</span>
       </div>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- UrlShortene — medium card -->
-    <a class="card card-md accent-coral" href="https://github.com/alnyx-dev/UrlShortene" target="_blank" rel="noopener">
+    <a class="card card-md accent-coral reveal" data-category="app" href="https://github.com/alnyx-dev/UrlShortene" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">C#</span>
         <span class="card-stars">★ 0</span>
@@ -77,25 +151,25 @@
       <div class="card-tags">
         <span>ASP.NET</span><span>Docker</span><span>Clean Arch</span>
       </div>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- DinoGame-Reborn — small card -->
-    <a class="card card-sm dark" href="https://github.com/alnyx-dev/DinoGame-Reborn" target="_blank" rel="noopener">
+    <a class="card card-sm dark reveal" data-category="app" href="https://github.com/alnyx-dev/DinoGame-Reborn" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">C# / Unity</span>
       </div>
       <h2 class="card-title">DinoGame: Reborn</h2>
       <p class="card-desc">A reimagined take on the classic Chrome dino game, built in Unity.</p>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
     <!-- GAMES SECTION DIVIDER -->
-    <div class="section-divider">
+    <div class="section-divider reveal" id="games" data-category="game">
       <h2 class="section-title">Games</h2>
-      <span class="section-sub">Kavun Studio &nbsp;·&nbsp; ComRats</span>
+      <span class="section-sub">Kavun Studio&nbsp;·&nbsp;ComRats</span>
     </div>
 
-    <!-- Echo-of-the-Rift — large game card, most stars -->
-    <a class="card card-lg dark" href="https://github.com/ComRats/Echo-of-the-Rift" target="_blank" rel="noopener">
+    <a class="card card-lg dark reveal" data-category="game" href="https://github.com/ComRats/Echo-of-the-Rift" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">C# / Unity</span>
         <span class="card-stars">★ 4</span>
@@ -105,10 +179,10 @@
       <div class="card-tags">
         <span>Unity</span><span>C#</span><span>RPG</span>
       </div>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- Obby-3D — medium game card -->
-    <a class="card card-md accent-coral" href="https://github.com/Kavun-Studio/Obby-3D" target="_blank" rel="noopener">
+    <a class="card card-md accent-coral reveal" data-category="game" href="https://github.com/Kavun-Studio/Obby-3D" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">C# / Unity</span>
       </div>
@@ -117,55 +191,56 @@
       <div class="card-tags">
         <span>Unity</span><span>3D</span><span>Parkour</span>
       </div>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- Puzzle — small game card -->
-    <a class="card card-sm accent-green" href="https://github.com/Kavun-Studio/Puzzle" target="_blank" rel="noopener">
+    <a class="card card-sm accent-green reveal" data-category="game" href="https://github.com/Kavun-Studio/Puzzle" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">C# / Unity</span>
       </div>
       <h2 class="card-title">Puzzle</h2>
       <p class="card-desc">Puzzle game template, built solo in Unity.</p>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- HyperCasualRunner — small game card -->
-    <a class="card card-sm dark" href="https://github.com/Kavun-Studio/HyperCasualRunner" target="_blank" rel="noopener">
+    <a class="card card-sm dark reveal" data-category="game" href="https://github.com/Kavun-Studio/HyperCasualRunner" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">ShaderLab / Unity</span>
       </div>
       <h2 class="card-title">Hyper Casual Runner</h2>
       <p class="card-desc">Hyper-casual runner template for future games, built solo.</p>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- Undartale — small game card -->
-    <a class="card card-sm accent-blue" href="https://github.com/ComRats/Undartale" target="_blank" rel="noopener">
+    <a class="card card-sm accent-blue reveal" data-category="game" href="https://github.com/ComRats/Undartale" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">ShaderLab / Unity</span>
       </div>
       <h2 class="card-title">Undartale</h2>
       <p class="card-desc">Undertale-inspired game project by ComRats.</p>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- 3DMayProject — small game card -->
-    <a class="card card-sm dark" href="https://github.com/ComRats/3DMayProject" target="_blank" rel="noopener">
+    <a class="card card-sm dark reveal" data-category="game" href="https://github.com/ComRats/3DMayProject" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">ShaderLab / Unity</span>
       </div>
       <h2 class="card-title">3D May Project</h2>
       <p class="card-desc">3D game project by Kavun Studio — currently in development.</p>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
-    <!-- ShieldOfDesert — small game card -->
-    <a class="card card-sm accent-coral" href="https://github.com/ComRats/ShieldOfDesert" target="_blank" rel="noopener">
+    <a class="card card-sm accent-coral reveal" data-category="game" href="https://github.com/ComRats/ShieldOfDesert" target="_blank" rel="noopener">
       <div class="card-top">
         <span class="card-lang">C# / Unity</span>
       </div>
       <h2 class="card-title">Shield of Desert</h2>
       <p class="card-desc">Military-themed desert combat game by ComRats.</p>
+      <span class="card-arrow" aria-hidden="true">↗</span>
     </a>
 
     <!-- TECH STACK card -->
-    <div class="card card-sm stack-card">
+    <div class="card card-md stack-card reveal" id="stack" data-category="app">
       <h2 class="card-title">Tech Stack</h2>
       <div class="stack-grid">
         <span class="chip">Rust</span>
@@ -188,24 +263,24 @@
     </div>
 
     <!-- CONTACTS card -->
-    <div class="card card-sm contact-card dark">
+    <div class="card card-md contact-card dark reveal" id="contact" data-category="app">
       <h2 class="card-title">Contact</h2>
       <div class="contact-links">
         <a href="https://github.com/alnyx-dev" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.85 1.22 1.85 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.3-5.47-5.81 0-1.28.47-2.33 1.23-3.15-.12-.3-.53-1.51.12-3.15 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.28-1.51 3.29-1.2 3.29-1.2.65 1.64.24 2.85.12 3.15.77.82 1.23 1.87 1.23 3.15 0 4.52-2.81 5.51-5.49 5.8.43.36.81 1.08.81 2.18v3.24c0 .31.22.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5Z"/></svg>
-          alnyx-dev
+          <span>alnyx-dev</span>
         </a>
         <a href="https://github.com/Kavun-Studio" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.85 1.22 1.85 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.3-5.47-5.81 0-1.28.47-2.33 1.23-3.15-.12-.3-.53-1.51.12-3.15 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.28-1.51 3.29-1.2 3.29-1.2.65 1.64.24 2.85.12 3.15.77.82 1.23 1.87 1.23 3.15 0 4.52-2.81 5.51-5.49 5.8.43.36.81 1.08.81 2.18v3.24c0 .31.22.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5Z"/></svg>
-          Kavun Studio
+          <span>Kavun Studio</span>
         </a>
         <a href="https://github.com/ComRats" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.85 1.22 1.85 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.3-5.47-5.81 0-1.28.47-2.33 1.23-3.15-.12-.3-.53-1.51.12-3.15 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.28-1.51 3.29-1.2 3.29-1.2.65 1.64.24 2.85.12 3.15.77.82 1.23 1.87 1.23 3.15 0 4.52-2.81 5.51-5.49 5.8.43.36.81 1.08.81 2.18v3.24c0 .31.22.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5Z"/></svg>
-          ComRats
+          <span>ComRats</span>
         </a>
         <a href="mailto:alnyx-dev@users.noreply.github.com">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
-          Email
+          <span>Email</span>
         </a>
       </div>
     </div>
@@ -213,8 +288,11 @@
   </main>
 
   <footer class="footer">
-    <p>built with static HTML &amp; CSS · hosted on GitHub Pages</p>
+    <p>built with static HTML, CSS &amp; vanilla JS · hosted on GitHub Pages · <span id="year"></span></p>
   </footer>
 
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+  <script src="app.js" defer></script>
 </body>
 </html>
