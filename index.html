@@ -1,847 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>alnyx — index</title>
-  <meta name="description" content="alnyx-dev — games. C# & Unity. An index of work.">
-  <meta name="theme-color" content="#0f0d1a">
-  <link rel="icon" id="favicon" href="">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..600,0..1,0&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>alnyx — developer</title>
+<meta name="description" content="alnyx (alnyxcs) — developer. Games in C# and Unity; tools in Rust, Zig and TypeScript.">
+<link rel="canonical" href="https://alnyx-dev.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="google-site-verification" content="wNRhs32dFSc0FW93jGzTGAF5mcwV4OuygvEs5phq724">
+<meta name="author" content="alnyx">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-  <script>
-    // Предотвращает съезжание страницы вниз при перезагрузке (F5)
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
-    window.scrollTo(0, 0);
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="alnyx">
+<meta property="og:title" content="alnyx — developer">
+<meta property="og:description" content="Developer. Games in C# and Unity; tools in Rust, Zig and TypeScript.">
+<meta property="og:url" content="https://alnyx-dev.github.io/">
+<meta property="og:locale" content="en_US">
+<meta property="profile:username" content="alnyx">
+<meta property="og:image" content="https://alnyx-dev.github.io/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="alnyx — Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="alnyx — developer">
+<meta name="twitter:description" content="Developer. Games in C# and Unity; tools in Rust, Zig and TypeScript.">
+<meta name="twitter:image" content="https://alnyx-dev.github.io/og.png">
+<meta name="twitter:image:alt" content="alnyx — Developer">
 
-    // Случайный начальный оттенок до первого рендера
-    (function () {
-      var h = Math.floor(Math.random() * 360);
-      document.documentElement.style.setProperty('--h', h);
-    })();
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://alnyx-dev.github.io/#page",
+      "url": "https://alnyx-dev.github.io/",
+      "name": "alnyx — developer",
+      "description": "Developer building games and tools.",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://alnyx-dev.github.io/#website" },
+      "mainEntity": { "@id": "https://alnyx-dev.github.io/#person" },
+      "primaryImageOfPage": { "@id": "https://alnyx-dev.github.io/#ogimage" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://alnyx-dev.github.io/#person",
+      "name": "alnyx",
+      "alternateName": ["alnyxcs", "alnyx-dev", "alnyx cs", "alnyx dev"],
+      "url": "https://alnyx-dev.github.io/",
+      "jobTitle": "Developer",
+      "description": "Developer. Games in C# and Unity; tools in Rust, Zig and TypeScript.",
+      "knowsAbout": ["C#", "Unity", "Rust", "Zig", "TypeScript", "Python", "Game development"],
+      "image": "https://alnyx-dev.github.io/og.png",
+      "mainEntityOfPage": { "@id": "https://alnyx-dev.github.io/#page" },
+      "sameAs": [
+        "https://github.com/alnyx-dev",
+        "https://github.com/alnyxcs",
+        "https://www.youtube.com/@alnyxcs",
+        "https://t.me/alnyxcs",
+        "https://steamcommunity.com/id/alnyx",
+        "https://www.instagram.com/truealnyx",
+        "https://alnyxcs.github.io/",
+        "https://github.com/Kavun-Studio",
+        "https://github.com/ComRats"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alnyx-dev.github.io/#website",
+      "url": "https://alnyx-dev.github.io/",
+      "name": "alnyx",
+      "alternateName": ["alnyxcs", "alnyx-dev"],
+      "inLanguage": "en",
+      "publisher": { "@id": "https://alnyx-dev.github.io/#person" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://alnyx-dev.github.io/#ogimage",
+      "url": "https://alnyx-dev.github.io/og.png",
+      "contentUrl": "https://alnyx-dev.github.io/og.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "alnyx — Developer"
+    }
+  ]
+}
+</script>
 
-  <style>
-    /* ============================================================
-       MATERIAL 3 — COLOR ROLES, derived from --h
-       ============================================================ */
-    :root {
-      --h: 258;
-      --h2: calc(var(--h) + 85);
-      --h3: calc(var(--h) + 160);
-
-      --md-primary:               hsl(var(--h) 100% 87%);
-      --md-on-primary:            hsl(var(--h) 58% 28%);
-      --md-primary-container:     hsl(var(--h) 43% 38%);
-      --md-on-primary-container:  hsl(var(--h) 100% 93%);
-      --md-secondary:             hsl(var(--h) 27% 81%);
-      --md-on-secondary:          hsl(var(--h) 18% 22%);
-      --md-secondary-container:   hsl(var(--h) 13% 31%);
-      --md-on-secondary-container:hsl(var(--h) 65% 92%);
-      --md-tertiary:              hsl(var(--h2) 63% 83%);
-      --md-on-tertiary:           hsl(var(--h2) 33% 22%);
-      --md-tertiary-container:    hsl(var(--h2) 25% 31%);
-      --md-on-tertiary-container: hsl(var(--h2) 100% 92%);
-      --md-surface:               hsl(var(--h) 33% 8%);
-      --md-surface-container-highest: hsl(var(--h) 13% 20%);
-      --md-on-surface:            hsl(var(--h) 17% 90%);
-      --md-on-surface-variant:    hsl(var(--h) 11% 79%);
-      --md-outline:               hsl(var(--h) 5% 58%);
-      --md-outline-variant:       hsl(var(--h) 7% 29%);
-
-      /* Glass tokens */
-      --glass-bg:      rgba(255,255,255,0.055);
-      --glass-bg-hover:rgba(255,255,255,0.09);
-      --glass-border:  rgba(255,255,255,0.12);
-      --glass-border-strong: rgba(255,255,255,0.22);
-      --glass-blur:    22px;
-      --glass-shadow:  0 10px 40px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.10);
-
-      /* Shape scale */
-      --shape-sm: 8px;
-      --shape-md: 12px;
-      --shape-lg: 16px;
-      --shape-xl: 28px;
-      --shape-full: 999px;
-
-      /* Motion */
-      --ease-emph: cubic-bezier(0.2, 0, 0, 1);
-      --ease-std:  cubic-bezier(0.2, 0, 0, 1);
-      --dur-short: 200ms;
-      --dur-med:   400ms;
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url("fonts/inter-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url("fonts/inter-cyrillic.woff2") format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  :root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    --bg: #ffffff;
+    --fg: #000000;
+    --btn-bg: #000000;
+    --btn-fg: #ffffff;
+    --btn-hover: #383838;
+    --grid: rgba(0, 0, 0, 0.06);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #000000;
+      --fg: #ffffff;
+      --btn-bg: #ffffff;
+      --btn-fg: #000000;
+      --btn-hover: #cccccc;
+      --grid: rgba(255, 255, 255, 0.08);
+      color-scheme: dark;
     }
-
-    *, *::before, *::after { box-sizing: border-box; }
-    html { 
-      scroll-behavior: smooth; 
-      scroll-padding-top: 86px;
-    }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      font-feature-settings: "cv11", "ss01";
-      color: var(--md-on-surface);
-      background: var(--md-surface);
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-      position: relative;
-      transition: background-color var(--dur-med) ease;
-    }
-    a { color: inherit; text-decoration: none; }
-    ul { list-style: none; margin: 0; padding: 0; }
-    h1, h2, h3, p, dl, dd { margin: 0; }
-
-    :focus-visible {
-      outline: 2px solid var(--md-primary);
-      outline-offset: 3px;
-    }
-
-    .ms {
-      font-family: "Material Symbols Rounded";
-      font-weight: normal; font-style: normal;
-      font-size: 20px; line-height: 1;
-      letter-spacing: normal; text-transform: none;
-      display: inline-block; white-space: nowrap;
-      word-wrap: normal; direction: ltr;
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      -webkit-font-feature-settings: 'liga';
-      user-select: none;
-    }
-    .ms.filled { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-
-    /* Background blobs */
-    .bg {
-      position: fixed; inset: 0; z-index: -2; overflow: hidden;
-      background:
-        radial-gradient(1200px 800px at 80% -10%, hsl(var(--h) 46% 23%) 0%, transparent 60%),
-        radial-gradient(900px 700px at -10% 30%, hsl(var(--h) 38% 16%) 0%, transparent 60%),
-        var(--md-surface);
-      transition: background var(--dur-med) ease;
-    }
-    .blob {
-      position: absolute; border-radius: 50%;
-      filter: blur(90px); opacity: 0.55;
-      will-change: transform;
-      animation: drift 26s ease-in-out infinite alternate;
-    }
-    .blob.b1 { width: 620px; height: 620px; top: -160px; left: -120px;
-               background: radial-gradient(circle at 30% 30%, hsl(var(--h) 40% 57%), hsl(var(--h) 43% 38%) 60%, transparent 70%); }
-    .blob.b2 { width: 560px; height: 560px; top: 30%; right: -180px;
-               background: radial-gradient(circle at 60% 40%, hsl(var(--h2) 63% 83%), hsl(var(--h2) 30% 42%) 60%, transparent 70%);
-               animation-delay: -8s; animation-duration: 32s; }
-    .blob.b3 { width: 520px; height: 520px; bottom: -200px; left: 25%;
-               background: radial-gradient(circle at 40% 60%, hsl(var(--h3) 55% 63%), hsl(var(--h3) 45% 30%) 60%, transparent 70%);
-               animation-delay: -16s; animation-duration: 38s; opacity: 0.38; }
-    @keyframes drift {
-      0%   { transform: translate3d(0,0,0) scale(1); }
-      50%  { transform: translate3d(60px, -40px, 0) scale(1.08); }
-      100% { transform: translate3d(-40px, 60px, 0) scale(0.96); }
-    }
-    .noise {
-      position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .045;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    }
-    @media (prefers-reduced-motion: reduce) { .blob { animation: none; } }
-
-    .glass {
-      background: var(--glass-bg);
-      border: 1px solid var(--glass-border);
-      -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(160%);
-      backdrop-filter: blur(var(--glass-blur)) saturate(160%);
-      box-shadow: var(--glass-shadow);
-    }
-
-    .page {
-      width: min(1120px, 100% - 2rem);
-      margin: 0 auto;
-      padding: 96px 0 80px;
-    }
-    .section { margin-top: 64px; }
-
-    /* ============================================================
-       TOP APP BAR
-       ============================================================ */
-    .appbar {
-      position: fixed; top: 12px; left: 50%; transform: translateX(-50%);
-      z-index: 50;
-      width: min(1120px, 100% - 2rem);
-      height: 60px; padding: 0 8px 0 16px;
-      border-radius: var(--shape-full);
-      display: flex; align-items: center; gap: 10px;
-    }
-    .brand {
-      display: flex; align-items: center; gap: 10px;
-      font-weight: 700; letter-spacing: -0.01em; font-size: 17px;
-    }
-    .brand .dot {
-      width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center;
-      background: linear-gradient(135deg, var(--md-primary), var(--md-tertiary));
-      color: var(--md-on-primary); font-weight: 800; font-size: 16px;
-      box-shadow: 0 4px 14px hsl(var(--h) 100% 87% / .35);
-      transition: transform var(--dur-short) var(--ease-emph);
-    }
-    .brand:hover .dot { transform: scale(1.06) rotate(-3deg); }
-    .brand .tld { color: var(--md-on-surface-variant); font-weight: 500; }
-    
-    .appbar nav { margin-left: auto; display: flex; gap: 4px; }
-    .nav-link {
-      position: relative; padding: 8px 14px; border-radius: var(--shape-full);
-      font-size: 14px; font-weight: 500; color: var(--md-on-surface-variant);
-      display: inline-flex; align-items: center; gap: 6px;
-      transition: color var(--dur-short), background var(--dur-short);
-    }
-    .nav-link:hover { color: var(--md-on-surface); background: rgba(255,255,255,0.08); }
-    .nav-link.active {
-      color: var(--md-primary);
-      background: hsl(var(--h) 100% 87% / .12);
-    }
-
-    .icon-btn {
-      width: 40px; height: 40px; border-radius: 50%;
-      border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05);
-      color: var(--md-on-surface-variant); display: grid; place-items: center;
-      cursor: pointer; transition: transform var(--dur-short), background var(--dur-short), color var(--dur-short);
-    }
-    .icon-btn:hover { color: var(--md-on-surface); background: rgba(255,255,255,0.12); transform: scale(1.05); }
-    .icon-btn:active { transform: scale(0.95); }
-
-    .appbar .cta {
-      display: inline-flex; align-items: center; gap: 8px;
-      height: 40px; padding: 0 16px 0 14px; border-radius: var(--shape-full);
-      background: var(--md-primary); color: var(--md-on-primary);
-      font-size: 14px; font-weight: 600;
-      transition: transform var(--dur-short) var(--ease-emph), box-shadow var(--dur-short), filter var(--dur-short);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-    }
-    .appbar .cta:hover { filter: brightness(1.06); box-shadow: 0 6px 18px hsl(var(--h) 100% 87% / .35); transform: translateY(-1px); }
-
-    /* ============================================================
-       HERO
-       ============================================================ */
-    .hero {
-      border-radius: var(--shape-xl);
-      padding: clamp(28px, 5vw, 56px);
-      display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px;
-      position: relative; overflow: hidden;
-      animation: rise .7s var(--ease-emph) both;
-    }
-    .hero::before {
-      content: ""; position: absolute; inset: 0; pointer-events: none;
-      background: linear-gradient(120deg, rgba(255,255,255,0.10) 0%, transparent 35%, transparent 65%, rgba(255,255,255,0.05) 100%);
-      mix-blend-mode: soft-light;
-    }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: .12em;
-      text-transform: uppercase; color: var(--md-primary);
-      padding: 6px 12px 6px 8px; border-radius: var(--shape-full);
-      background: hsl(var(--h) 100% 87% / .10); border: 1px solid hsl(var(--h) 100% 87% / .22);
-    }
-    .eyebrow .pulse {
-      width: 8px; height: 8px; border-radius: 50%; background: #7ee0b8;
-      box-shadow: 0 0 0 0 rgba(126,224,184,0.6); animation: pulse 2.2s infinite;
-    }
-    @keyframes pulse { 70% { box-shadow: 0 0 0 9px rgba(126,224,184,0);} 100% { box-shadow: 0 0 0 0 rgba(126,224,184,0);} }
-    .display {
-      margin-top: 22px;
-      font-size: clamp(56px, 9vw, 104px); line-height: .95; font-weight: 800;
-      letter-spacing: -0.045em;
-      background: linear-gradient(135deg, #ffffff 0%, var(--md-primary) 55%, var(--md-tertiary) 100%);
-      -webkit-background-clip: text; background-clip: text; color: transparent;
-    }
-    .display .period { color: var(--md-tertiary); -webkit-text-fill-color: var(--md-tertiary); }
-    .lede {
-      margin-top: 20px; max-width: 46ch;
-      font-size: clamp(17px, 2vw, 20px); line-height: 1.5;
-      color: var(--md-on-surface-variant);
-    }
-    .hero-actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      height: 44px; padding: 0 22px 0 18px; border-radius: var(--shape-full);
-      font-size: 14px; font-weight: 600; cursor: pointer; position: relative; overflow: hidden;
-      border: none;
-      transition: transform var(--dur-short) var(--ease-emph), box-shadow var(--dur-short), background var(--dur-short), filter var(--dur-short);
-    }
-    .btn .ms { font-size: 19px; }
-    .btn::after {
-      content: ""; position: absolute; inset: 0; background: currentColor; opacity: 0;
-      transition: opacity var(--dur-short);
-    }
-    .btn:hover::after { opacity: .08; }
-    .btn:active::after { opacity: .12; }
-    .btn-filled { background: var(--md-primary); color: var(--md-on-primary); box-shadow: 0 1px 3px rgba(0,0,0,.3); }
-    .btn-filled:hover { box-shadow: 0 6px 20px hsl(var(--h) 100% 87% / .35); transform: translateY(-1px); }
-    .btn-tonal { background: var(--md-secondary-container); color: var(--md-on-secondary-container); }
-    .btn-tonal:hover { filter: brightness(1.1); }
-    .btn-outlined { background: transparent; color: var(--md-primary); border: 1px solid var(--md-outline); }
-    .btn-outlined:hover { border-color: var(--md-primary); }
-
-    .facts { align-self: end; display: grid; gap: 10px; }
-    .fact {
-      border-radius: var(--shape-lg); padding: 14px 16px;
-      display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: center;
-      background: rgba(255,255,255,0.04); border: 1px solid var(--glass-border);
-      transition: background var(--dur-short), transform var(--dur-short) var(--ease-emph);
-    }
-    .fact:hover { background: var(--glass-bg-hover); transform: translateX(4px); }
-    .fact .ic {
-      width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
-      background: var(--md-primary-container); color: var(--md-on-primary-container);
-    }
-    .fact dt { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--md-on-surface-variant); font-weight: 600; }
-    .fact dd { font-size: 15px; font-weight: 500; margin-top: 2px; }
-
-    /* ============================================================
-       SECTION HEADERS (Perfect vertical center)
-       ============================================================ */
-    .sec-head { 
-      display: flex; 
-      align-items: center; 
-      gap: 14px; 
-      margin-bottom: 20px; 
-      padding: 0 6px; 
-      flex-wrap: wrap;
-    }
-    .sec-no {
-      font-family: "JetBrains Mono", monospace; 
-      font-size: 13px; 
-      font-weight: 600;
-      line-height: 1;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--md-tertiary);
-      padding: 6px 10px; 
-      border-radius: var(--shape-sm);
-      background: hsl(var(--h2) 63% 83% / .12); 
-      border: 1px solid hsl(var(--h2) 63% 83% / .25);
-    }
-    .sec-title { 
-      font-size: clamp(26px, 3.4vw, 36px); 
-      font-weight: 700; 
-      letter-spacing: -0.03em;
-      line-height: 1.1; 
-    }
-    .sec-sub { 
-      margin-left: auto; 
-      color: var(--md-on-surface-variant); 
-      font-size: 14px; 
-    }
-
-    /* ============================================================
-       GAMES — cards
-       ============================================================ */
-    .grid {
-      display: grid; gap: 14px;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      align-items: stretch;
-    }
-    .grid > li { 
-      display: flex;
-    }
-    .card {
-      flex: 1;
-      min-height: 260px;
-      display: flex; flex-direction: column; gap: 16px;
-      padding: 22px; border-radius: var(--shape-xl);
-      position: relative; overflow: hidden; isolation: isolate;
-      transition: transform var(--dur-med) var(--ease-emph), background var(--dur-short), border-color var(--dur-short), box-shadow var(--dur-med);
-      animation: rise .7s var(--ease-emph) both;
-    }
-    .grid > li:nth-child(2) .card { animation-delay: .05s } .grid > li:nth-child(3) .card { animation-delay: .10s }
-    .grid > li:nth-child(4) .card { animation-delay: .15s } .grid > li:nth-child(5) .card { animation-delay: .20s }
-    .grid > li:nth-child(6) .card { animation-delay: .25s } .grid > li:nth-child(7) .card { animation-delay: .30s }
-    
-    .card::before {
-      content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0;
-      background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), hsl(var(--h) 100% 87% / .16), transparent 45%);
-      transition: opacity var(--dur-med);
-    }
-    .card:hover { 
-      transform: translateY(-4px); 
-      background: var(--glass-bg-hover); 
-      border-color: var(--glass-border-strong);
-      box-shadow: 0 18px 50px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.16); 
-    }
-    .card:hover::before { opacity: 1; }
-    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-    .card-no { display: inline-flex; align-items: center; gap: 8px; font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--md-on-surface-variant); letter-spacing: .08em; }
-    
-    .badge {
-      height: 22px; padding: 0 8px; border-radius: var(--shape-full); display: inline-flex; align-items: center;
-      font-size: 10px; font-weight: 700; letter-spacing: .1em;
-      background: hsl(var(--h2) 63% 83% / .14); color: var(--md-tertiary);
-    }
-    .card-arrow {
-      width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
-      background: rgba(255,255,255,0.06); border: 1px solid var(--glass-border);
-      color: var(--md-on-surface-variant); flex-shrink: 0;
-      transition: background var(--dur-short), color var(--dur-short), transform var(--dur-med) var(--ease-emph);
-    }
-    .card:hover .card-arrow { background: var(--md-primary); color: var(--md-on-primary); transform: rotate(-45deg) scale(1.05); }
-    
-    .card-title { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
-    .card-desc {
-      color: var(--md-on-surface-variant); font-size: 15px; line-height: 1.55; flex: 1;
-      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
-    }
-    .card-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: auto; }
-
-    /* M3 chips */
-    .chip {
-      display: inline-flex; align-items: center; gap: 6px;
-      height: 30px; padding: 0 12px; border-radius: var(--shape-sm);
-      font-size: 13px; font-weight: 500;
-      border: 1px solid var(--md-outline-variant); color: var(--md-on-surface-variant);
-      background: rgba(255,255,255,0.03);
-    }
-    .chip .ms { font-size: 16px; }
-    .chip.studio { border-color: transparent; background: var(--md-secondary-container); color: var(--md-on-secondary-container); }
-    .chip.studio.comrats { background: var(--md-tertiary-container); color: var(--md-on-tertiary-container); }
-    .chip.studio.alnyx   { background: var(--md-primary-container); color: var(--md-on-primary-container); }
-    .chip.genre { border-style: dashed; }
-
-    /* ============================================================
-       STACK
-       ============================================================ */
-    .stack {
-      border-radius: var(--shape-xl); padding: 8px;
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
-    }
-    .stack-cell {
-      padding: 22px; border-radius: 20px;
-      background: rgba(255,255,255,0.03);
-      display: flex; flex-direction: column; gap: 14px;
-      transition: background var(--dur-short);
-    }
-    .stack-cell:hover { background: rgba(255,255,255,0.06); }
-    .stack-cell .ic {
-      width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center;
-      background: linear-gradient(135deg, hsl(var(--h) 100% 87% / .22), hsl(var(--h2) 63% 83% / .18));
-      color: var(--md-primary); border: 1px solid var(--glass-border);
-    }
-    .stack-cell .ic .ms { font-size: 22px; }
-    .stack-cell dt { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--md-on-surface-variant); font-weight: 600; }
-    .stack-cell dd { display: flex; flex-wrap: wrap; gap: 8px; }
-    .tag {
-      padding: 7px 12px; border-radius: var(--shape-full); font-size: 13px; font-weight: 500;
-      background: rgba(255,255,255,0.06); border: 1px solid var(--glass-border);
-      transition: background var(--dur-short), border-color var(--dur-short), transform var(--dur-short) var(--ease-emph);
-    }
-    .tag:hover { background: var(--md-primary-container); color: var(--md-on-primary-container); border-color: transparent; transform: translateY(-1px); }
-    .tag.big { font-size: 16px; padding: 10px 16px; font-weight: 600; }
-
-    /* ============================================================
-       CONTACT
-       ============================================================ */
-    .contact-wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 14px; }
-    .contact-card {
-      border-radius: var(--shape-xl); padding: clamp(24px, 4vw, 40px);
-      display: flex; flex-direction: column; gap: 18px; justify-content: space-between;
-      background:
-        linear-gradient(135deg, hsl(var(--h) 43% 38% / .55), hsl(var(--h2) 25% 31% / .45)),
-        var(--glass-bg);
-    }
-    .contact-card h3 { font-size: clamp(26px, 3.4vw, 40px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
-    .contact-card p { color: var(--md-on-surface-variant); font-size: 16px; line-height: 1.5; max-width: 38ch; }
-    .contact-btns { display: flex; flex-wrap: wrap; gap: 10px; }
-
-    .links { display: grid; gap: 8px; align-content: start; }
-    .link {
-      display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 14px;
-      padding: 12px 14px; border-radius: 20px;
-      cursor: pointer;
-      transition: background var(--dur-short), border-color var(--dur-short), transform var(--dur-med) var(--ease-emph);
-    }
-    .link:hover { background: var(--glass-bg-hover); border-color: var(--glass-border-strong); transform: translateX(4px); }
-    .link .ic {
-      width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center;
-      background: var(--md-surface-container-highest); color: var(--md-primary);
-    }
-    .link .ic .ms { font-size: 22px; }
-    .link .ic svg { width: 22px; height: 22px; fill: currentColor; }
-    .link-key { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--md-on-surface-variant); font-weight: 600; }
-    .link-val { display: block; font-size: 15px; font-weight: 500; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .link .go { color: var(--md-on-surface-variant); transition: color var(--dur-short), transform var(--dur-med) var(--ease-emph); }
-    .link:hover .go { color: var(--md-primary); transform: translate(2px, -2px); }
-
-    /* Toast Notification */
-    .toast {
-      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(100px);
-      padding: 12px 20px; border-radius: var(--shape-full);
-      background: var(--md-on-surface); color: var(--md-surface);
-      font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 100;
-      pointer-events: none; opacity: 0;
-      transition: transform var(--dur-med) var(--ease-emph), opacity var(--dur-med);
-    }
-    .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
-
-    /* ============================================================
-       FOOTER
-       ============================================================ */
-    footer {
-      margin-top: 64px; padding: 18px 24px; border-radius: var(--shape-full);
-      display: flex; align-items: center; justify-content: space-between;
-      font-size: 13px; color: var(--md-on-surface-variant);
-    }
-    .back-to-top {
-      display: inline-flex; align-items: center; gap: 4px;
-      color: var(--md-on-surface-variant); font-weight: 500;
-      transition: color var(--dur-short);
-    }
-    .back-to-top:hover { color: var(--md-primary); }
-
-    @keyframes rise { from { opacity: 0; transform: translateY(18px);} to { opacity: 1; transform: none; } }
-
-    /* ============================================================
-       RESPONSIVE
-       ============================================================ */
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; }
-      .stack { grid-template-columns: 1fr; }
-      .contact-wrap { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 720px) {
-      .page { padding-top: 88px; }
-      .grid { grid-template-columns: 1fr; }
-      .sec-sub { display: none; }
-      .appbar nav .nav-text { display: none; }
-      .appbar nav a { padding: 10px; }
-      footer { flex-direction: column; gap: 8px; text-align: center; }
-    }
-    @media (max-width: 440px) {
-      .appbar .cta span:not(.ms) { display: none; }
-      .appbar .cta { padding: 0 12px; }
-    }
-  </style>
+  }
+  :root[data-theme="dark"] {
+    --bg: #000000;
+    --fg: #ffffff;
+    --btn-bg: #ffffff;
+    --btn-fg: #000000;
+    --btn-hover: #cccccc;
+    --grid: rgba(255, 255, 255, 0.08);
+    color-scheme: dark;
+  }
+  html, body { min-height: 100%; margin: 0; }
+  body {
+    display: block;
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(to right, var(--grid) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+    background-size: 64px 64px;
+    background-position: center;
+    color: var(--fg);
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    gap: 0.85rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  .about {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 0 2rem 7rem;
+  }
+  .about h2 {
+    margin: 0 0 1.1rem;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--fg) 40%, transparent);
+  }
+  .about p {
+    margin: 0 0 1rem;
+    font-size: 15px;
+    line-height: 1.65;
+    color: color-mix(in srgb, var(--fg) 72%, transparent);
+    text-wrap: pretty;
+  }
+  .about p:last-child { margin-bottom: 0; }
+  .about a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--fg) 25%, transparent);
+    transition: border-color 0.15s ease;
+  }
+  .about a:hover { border-bottom-color: currentColor; }
+  .about a:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+  .brand {
+    margin: 0;
+    font-size: clamp(2.75rem, 9vw, 4.5rem);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.032em;
+    animation: rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) 0.05s backwards;
+  }
+  .tagline {
+    max-width: 28ch;
+    margin: 0 0 0.6rem;
+    font-size: 14px;
+    line-height: 1.55;
+    text-wrap: balance;
+    color: color-mix(in srgb, var(--fg) 62%, transparent);
+    animation: rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) 0.12s backwards;
+  }
+  a.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    height: 40px;
+    padding: 0 1rem;
+    border-radius: 6px;
+    background: var(--btn-bg);
+    color: var(--btn-fg);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    transition: background 0.15s ease, transform 0.15s ease;
+    animation: rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s backwards;
+  }
+  a.btn:hover { background: var(--btn-hover); }
+  a.btn:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+  a.btn svg { width: 18px; height: 18px; fill: currentColor; }
+  a.btn:active { transform: scale(0.97); }
+  a.btn .arrow {
+    width: 0; height: 14px; margin-left: -0.6rem;
+    fill: none; stroke: currentColor; stroke-width: 1.6;
+    stroke-linecap: round; stroke-linejoin: round;
+    opacity: 0; transform: translateX(-6px);
+    transition: width 0.25s ease, margin 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+  }
+  a.btn:hover .arrow, a.btn:focus-visible .arrow {
+    width: 14px; margin-left: 0; opacity: 1; transform: translateX(0);
+  }
+  body::before {
+    content: "";
+    position: fixed; inset: 0; pointer-events: none;
+    background-image:
+      linear-gradient(to right, color-mix(in srgb, var(--fg) 30%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in srgb, var(--fg) 30%, transparent) 1px, transparent 1px);
+    background-size: 64px 64px;
+    background-position: center;
+    -webkit-mask-image: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), #000, transparent);
+    mask-image: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), #000, transparent);
+    animation: glow 1.4s ease 0.1s backwards;
+  }
+  @keyframes rise { from { opacity: 0; filter: blur(14px); transform: translateY(10px); } to { opacity: 1; filter: blur(0); transform: none; } }
+  @keyframes glow { from { opacity: 0; filter: blur(10px); } to { opacity: 1; filter: blur(0); } }
+  .ctx {
+    position: fixed; z-index: 10; min-width: 208px; padding: 4px;
+    display: flex; flex-direction: column;
+    background: var(--bg); color: var(--fg);
+    border: 1px solid color-mix(in srgb, var(--fg) 14%, transparent);
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+    font-size: 14px;
+    transform-origin: top left;
+  }
+  .ctx[hidden] { display: none; }
+  .ctx:not([hidden]) { animation: pop 0.16s cubic-bezier(0.2, 0.7, 0.2, 1); }
+  .ctx a, .ctx button {
+    display: flex; align-items: center; box-sizing: border-box;
+    width: 100%; height: 32px; padding: 0 10px;
+    border: 0; border-radius: 6px; background: transparent;
+    color: inherit; font: inherit; text-align: left; text-decoration: none;
+    cursor: pointer;
+  }
+  .ctx a:hover, .ctx button:hover, .ctx a:focus-visible, .ctx button:focus-visible {
+    background: color-mix(in srgb, var(--fg) 8%, transparent); outline: none;
+  }
+  .ctx hr {
+    width: 100%; height: 1px; margin: 4px 0; border: 0;
+    background: color-mix(in srgb, var(--fg) 12%, transparent);
+  }
+  @keyframes pop { from { opacity: 0; filter: blur(6px); transform: scale(0.96); } to { opacity: 1; filter: blur(0); transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .ctx:not([hidden]) { animation: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    a.btn, body::before, .brand, .tagline { animation: none; }
+    a.btn, a.btn .arrow { transition: none; }
+  }
+</style>
 </head>
 <body>
-
-<!-- Background -->
-<div class="bg" aria-hidden="true">
-  <div class="blob b1"></div>
-  <div class="blob b2"></div>
-  <div class="blob b3"></div>
-</div>
-<div class="noise" aria-hidden="true"></div>
-
-<!-- Top App Bar -->
-<header class="appbar glass">
-  <a class="brand" href="#top">
-    <span class="dot">a</span>
-    <span>alnyx<span class="tld">.dev</span></span>
-  </a>
-
-  <nav aria-label="Sections">
-    <a class="nav-link" href="#games"><span class="ms">sports_esports</span><span class="nav-text">Games</span></a>
-    <a class="nav-link" href="#stack"><span class="ms">layers</span><span class="nav-text">Stack</span></a>
-    <a class="nav-link" href="#contact"><span class="ms">mail</span><span class="nav-text">Contact</span></a>
-  </nav>
-
-  <!-- Кнопка случайной смены палитры темы -->
-  <button class="icon-btn" id="retheme-btn" title="Randomize accent palette" aria-label="Change theme accent color">
-    <span class="ms">palette</span>
-  </button>
-
-  <a class="cta" href="https://github.com/alnyx-dev" target="_blank" rel="noopener">
-    <span class="ms">code</span><span>GitHub</span>
-  </a>
-</header>
-
-<main class="page" id="top">
-
-  <!-- HERO -->
-  <section class="hero glass">
-    <div>
-      <span class="eyebrow"><span class="pulse"></span> Index of work · № 2026</span>
-      <h1 class="display">alnyx<span class="period">.</span></h1>
-      <p class="lede">Developer of small games — shipped under two studios. C# &amp; Unity, tidy architecture, quick iteration.</p>
-      <div class="hero-actions">
-        <a class="btn btn-filled" href="#games"><span class="ms">sports_esports</span> Browse games</a>
-        <a class="btn btn-tonal" href="#contact"><span class="ms">mail</span> Say hello</a>
-      </div>
-    </div>
-
-    <dl class="facts">
-      <div class="fact">
-        <span class="ic"><span class="ms">stadia_controller</span></span>
-        <div><dt>Disciplines</dt><dd>Gamedev</dd></div>
-      </div>
-      <div class="fact">
-        <span class="ic"><span class="ms">data_object</span></span>
-        <div><dt>Languages</dt><dd>C#</dd></div>
-      </div>
-      <div class="fact">
-        <span class="ic"><span class="ms">groups</span></span>
-        <div><dt>Profiles</dt><dd>alnyx-dev · Kavun Studio · ComRats</dd></div>
-      </div>
-    </dl>
+  <main>
+    <h1 class="brand">alnyx</h1>
+    <p class="tagline">Developer</p>
+    <a class="btn" href="https://github.com/alnyx-dev" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      GitHub
+      <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+  </main>
+  <section class="about">
+    <h2>About</h2>
+    <p>I'm alnyx, a developer. I make games in C# and Unity, and build tools in Rust, Zig and TypeScript.</p>
+    <p>Games ship under <a href="https://github.com/ComRats" target="_blank" rel="me noopener">ComRats</a> and <a href="https://github.com/Kavun-Studio" target="_blank" rel="me noopener">Kavun Studio</a>, including Echo of the Rift. Personal projects live on GitHub as <a href="https://github.com/alnyx-dev" target="_blank" rel="me noopener">alnyx-dev</a> and <a href="https://github.com/alnyxcs" target="_blank" rel="me noopener">alnyxcs</a>: memfract, a Windows memory scanner in Zig; WinThemeAuto in Rust; <a href="https://alnyxcs.github.io/LoBeats/" target="_blank" rel="noopener">LoBeats</a>, a Lo-Fi radio player.</p>
+    <p>Elsewhere: <a href="https://github.com/alnyx-dev" target="_blank" rel="me noopener">GitHub</a>, <a href="https://www.youtube.com/@alnyxcs" target="_blank" rel="me noopener">YouTube</a>, <a href="https://t.me/alnyxcs" target="_blank" rel="me noopener">Telegram</a>, <a href="https://steamcommunity.com/id/alnyx" target="_blank" rel="me noopener">Steam</a>, <a href="https://www.instagram.com/truealnyx" target="_blank" rel="me noopener">Instagram</a>.</p>
   </section>
-
-  <!-- 01 GAMES -->
-  <section id="games" class="section">
-    <div class="sec-head">
-      <span class="sec-no">01</span>
-      <h2 class="sec-title">Games</h2>
-      <span class="sec-sub">alnyx · Kavun Studio · ComRats</span>
-    </div>
-
-    <ul class="grid" id="games-grid">
-      <li>
-        <a class="card glass" href="https://github.com/ComRats/Echo-of-the-Rift" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-no">01 <span class="badge">FLAGSHIP</span></span><span class="card-arrow"><span class="ms">arrow_forward</span></span></div>
-          <h3 class="card-title">Echo of the Rift</h3>
-          <p class="card-desc">An RPG adventure built in Unity — ComRats' flagship and most community-traction project to date.</p>
-          <div class="card-meta">
-            <span class="chip studio comrats"><span class="ms">group</span>ComRats</span>
-            <span class="chip genre">RPG</span>
-            <span class="chip"><span class="ms">deployed_code</span>Unity</span>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a class="card glass" href="https://github.com/Kavun-Studio/Obby-3D" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-no">02</span><span class="card-arrow"><span class="ms">arrow_forward</span></span></div>
-          <h3 class="card-title">Obby 3D</h3>
-          <p class="card-desc">A 3D parkour obby — jump, climb and navigate through obstacle courses.</p>
-          <div class="card-meta">
-            <span class="chip studio"><span class="ms">group</span>Kavun Studio</span>
-            <span class="chip genre">Parkour</span>
-            <span class="chip"><span class="ms">deployed_code</span>Unity</span>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a class="card glass" href="https://github.com/Kavun-Studio/HyperCasualRunner" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-no">03</span><span class="card-arrow"><span class="ms">arrow_forward</span></span></div>
-          <h3 class="card-title">Hyper Casual Runner</h3>
-          <p class="card-desc">A hyper-casual runner template for future games, built solo.</p>
-          <div class="card-meta">
-            <span class="chip studio"><span class="ms">group</span>Kavun Studio</span>
-            <span class="chip genre">Runner</span>
-            <span class="chip"><span class="ms">deployed_code</span>Unity</span>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a class="card glass" href="https://github.com/ComRats/Undartale" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-no">04</span><span class="card-arrow"><span class="ms">arrow_forward</span></span></div>
-          <h3 class="card-title">Undartale</h3>
-          <p class="card-desc">An Undertale-inspired game project with customized encounter systems.</p>
-          <div class="card-meta">
-            <span class="chip studio comrats"><span class="ms">group</span>ComRats</span>
-            <span class="chip genre">Adventure</span>
-            <span class="chip"><span class="ms">deployed_code</span>Unity</span>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a class="card glass" href="https://github.com/ComRats/3DMayProject" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-no">05</span><span class="card-arrow"><span class="ms">arrow_forward</span></span></div>
-          <h3 class="card-title">3D May Project</h3>
-          <p class="card-desc">A stylized 3D game project by Kavun Studio — currently in development.</p>
-          <div class="card-meta">
-            <span class="chip studio"><span class="ms">group</span>Kavun Studio</span>
-            <span class="chip genre">Action</span>
-            <span class="chip"><span class="ms">deployed_code</span>Unity</span>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a class="card glass" href="https://github.com/ComRats/ShieldOfDesert" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-no">06</span><span class="card-arrow"><span class="ms">arrow_forward</span></span></div>
-          <h3 class="card-title">Shield of Desert</h3>
-          <p class="card-desc">A military-themed desert combat game with defense tactical mechanics.</p>
-          <div class="card-meta">
-            <span class="chip studio comrats"><span class="ms">group</span>ComRats</span>
-            <span class="chip genre">Combat</span>
-            <span class="chip"><span class="ms">deployed_code</span>Unity</span>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a class="card glass" href="https://github.com/alnyx-dev/DinoGame-Reborn" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-no">07</span><span class="card-arrow"><span class="ms">arrow_forward</span></span></div>
-          <h3 class="card-title">DinoGame: Reborn</h3>
-          <p class="card-desc">A reimagined arcade take on the classic Chrome offline dino game, built in Unity.</p>
-          <div class="card-meta">
-            <span class="chip studio alnyx"><span class="ms">person</span>alnyx-dev</span>
-            <span class="chip genre">Arcade</span>
-            <span class="chip"><span class="ms">deployed_code</span>Unity</span>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- 02 STACK -->
-  <section id="stack" class="section">
-    <div class="sec-head">
-      <span class="sec-no">02</span>
-      <h2 class="sec-title">Stack</h2>
-      <span class="sec-sub">tools of the trade</span>
-    </div>
-
-    <dl class="stack glass">
-      <div class="stack-cell">
-        <span class="ic"><span class="ms">code</span></span>
-        <dt>Languages</dt>
-        <dd><span class="tag big">C#</span></dd>
-      </div>
-      <div class="stack-cell">
-        <span class="ic"><span class="ms">view_in_ar</span></span>
-        <dt>Engine</dt>
-        <dd><span class="tag big">Unity</span></dd>
-      </div>
-      <div class="stack-cell">
-        <span class="ic"><span class="ms">extension</span></span>
-        <dt>Libraries &amp; Frameworks</dt>
-        <dd>
-          <span class="tag">PrimeTween</span>
-          <span class="tag">UniTask</span>
-          <span class="tag">Zenject</span>
-          <span class="tag">VContainer</span>
-          <span class="tag">Addressables</span>
-        </dd>
-      </div>
-    </dl>
-  </section>
-
-  <!-- 03 CONTACT -->
-  <section id="contact" class="section">
-    <div class="sec-head">
-      <span class="sec-no">03</span>
-      <h2 class="sec-title">Contact</h2>
-      <span class="sec-sub">say hello</span>
-    </div>
-
-    <div class="contact-wrap">
-      <div class="contact-card glass">
-        <div>
-          <h3>Let's build something small &amp; sharp.</h3>
-          <p style="margin-top:14px">Open to collabs, game jams and freelance Unity development. Fastest reply by email.</p>
-        </div>
-        <div class="contact-btns">
-          <a class="btn btn-filled" href="mailto:alexsamus19@gmail.com"><span class="ms">send</span> Write an email</a>
-          <button class="btn btn-tonal" id="copy-email-btn" type="button"><span class="ms">content_copy</span> Copy email</button>
-        </div>
-      </div>
-
-      <ul class="links">
-        <li><a class="link glass" href="https://github.com/alnyx-dev" target="_blank" rel="noopener">
-          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></span>
-          <span><span class="link-key">GitHub</span><span class="link-val">github.com/alnyx-dev</span></span>
-          <span class="ms go">north_east</span>
-        </a></li>
-        <li><a class="link glass" href="https://github.com/Kavun-Studio" target="_blank" rel="noopener">
-          <span class="ic"><span class="ms">groups</span></span>
-          <span><span class="link-key">Studio</span><span class="link-val">github.com/Kavun-Studio</span></span>
-          <span class="ms go">north_east</span>
-        </a></li>
-        <li><a class="link glass" href="https://github.com/ComRats" target="_blank" rel="noopener">
-          <span class="ic"><span class="ms">groups</span></span>
-          <span><span class="link-key">Studio</span><span class="link-val">github.com/ComRats</span></span>
-          <span class="ms go">north_east</span>
-        </a></li>
-        <li><a class="link glass" href="mailto:alexsamus19@gmail.com">
-          <span class="ic"><span class="ms">alternate_email</span></span>
-          <span><span class="link-key">Email</span><span class="link-val">alexsamus19@gmail.com</span></span>
-          <span class="ms go">north_east</span>
-        </a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="glass">
-    <span>© 2026 alnyx — Built with C# &amp; Unity in mind</span>
-    <a href="#top" class="back-to-top"><span class="ms">arrow_upward</span> Back to top</a>
-  </footer>
-
-</main>
-
-<div id="toast" class="toast"><span class="ms">check_circle</span> Email copied to clipboard!</div>
-
-<script>
-  // Обновление палитры, фавикона и мета-тега
-  function applyHue(hue) {
-    document.documentElement.style.setProperty('--h', hue);
-    var accent = 'hsl(' + hue + ' 100% 87%)';
-    var surface = 'hsl(' + hue + ' 33% 8%)';
-    var svg = "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>" +
-      "<rect width='32' height='32' rx='9' fill='" + surface + "'/>" +
-      "<text x='50%' y='56%' font-size='22' font-weight='700' fill='" + accent + "' font-family='Inter,sans-serif' text-anchor='middle' dominant-baseline='central'>a</text></svg>";
-    document.getElementById('favicon').href = 'data:image/svg+xml,' + encodeURIComponent(svg);
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', surface);
-  }
-
-  // Стартовый цвет
-  var initialHue = getComputedStyle(document.documentElement).getPropertyValue('--h').trim() || 258;
-  applyHue(initialHue);
-
-  // Кнопка рандомизации палитры
-  document.getElementById('retheme-btn').addEventListener('click', function () {
-    var randomHue = Math.floor(Math.random() * 360);
-    applyHue(randomHue);
-  });
-
-  // Свечение карточек за курсором
-  document.querySelectorAll('.card').forEach(function (card) {
-    card.addEventListener('pointermove', function (e) {
-      var r = card.getBoundingClientRect();
-      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
-    });
-  });
-
-  // Быстрое копирование почты + уведомление Toast
-  var toastEl = document.getElementById('toast');
-  var toastTimer;
-  document.getElementById('copy-email-btn').addEventListener('click', function () {
-    navigator.clipboard.writeText('alexsamus19@gmail.com').then(function () {
-      toastEl.classList.add('show');
-      clearTimeout(toastTimer);
-      toastTimer = setTimeout(function () {
-        toastEl.classList.remove('show');
-      }, 2500);
-    });
-  });
-
-  // ScrollSpy (активный раздел в шапке)
-  var navLinks = document.querySelectorAll('.nav-link');
-  var sections = document.querySelectorAll('section[id]');
-
-  window.addEventListener('scroll', function () {
-    var scrollY = window.pageYOffset;
-    sections.forEach(function (current) {
-      var sectionHeight = current.offsetHeight;
-      var sectionTop = current.offsetTop - 120;
-      var sectionId = current.getAttribute('id');
-
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        navLinks.forEach(function (link) {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + sectionId) {
-            link.classList.add('active');
-          }
-        });
+  <div id="ctx" class="ctx" role="menu" hidden>
+    <a role="menuitem" data-act="open" href="https://github.com/alnyx-dev" target="_blank" rel="noopener">Open GitHub</a>
+    <button role="menuitem" data-act="copy" type="button">Copy link</button>
+    <hr>
+    <button role="menuitem" data-act="theme" type="button">Toggle theme</button>
+  </div>
+  <script>
+    (function () {
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      var root = document.documentElement;
+      var tx = innerWidth / 2, ty = innerHeight / 2, x = tx, y = ty, running = false;
+      function tick() {
+        x += (tx - x) * 0.12; y += (ty - y) * 0.12;
+        root.style.setProperty("--mx", x + "px");
+        root.style.setProperty("--my", y + "px");
+        if (Math.abs(tx - x) + Math.abs(ty - y) > 0.5) requestAnimationFrame(tick);
+        else running = false;
       }
-    });
-  });
-</script>
+      addEventListener("pointermove", function (e) {
+        tx = e.clientX; ty = e.clientY;
+        if (!running) { running = true; requestAnimationFrame(tick); }
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      var m = document.getElementById("ctx");
+      var items = [].slice.call(m.querySelectorAll("[role=menuitem]"));
+      var root = document.documentElement;
+      var URL_ = "https://github.com/alnyx-dev";
+      var copyBtn = m.querySelector("[data-act=copy]");
+      var copyLabel = copyBtn.textContent;
+      function show(x, y) {
+        copyBtn.textContent = copyLabel;
+        m.hidden = false;
+        var l = Math.min(x, innerWidth - m.offsetWidth - 8);
+        var t = Math.min(y, innerHeight - m.offsetHeight - 8);
+        m.style.left = Math.max(8, l) + "px";
+        m.style.top = Math.max(8, t) + "px";
+      }
+      function hide() { m.hidden = true; }
+      function copy() {
+        function fallback() {
+          var ta = document.createElement("textarea");
+          ta.value = URL_; ta.style.position = "fixed"; ta.style.opacity = "0";
+          document.body.appendChild(ta); ta.select();
+          try { document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(ta);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(URL_).catch(fallback);
+        } else { fallback(); }
+      }
+      function toggleTheme() {
+        var dark = getComputedStyle(root).getPropertyValue("--bg").trim() === "#000000";
+        root.setAttribute("data-theme", dark ? "light" : "dark");
+      }
+      addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        show(e.clientX, e.clientY);
+      });
+      addEventListener("pointerdown", function (e) {
+        if (!m.hidden && !m.contains(e.target)) hide();
+      });
+      addEventListener("keydown", function (e) {
+        if (m.hidden) return;
+        if (e.key === "Escape") { hide(); return; }
+        if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+          e.preventDefault();
+          var i = items.indexOf(document.activeElement);
+          var step = e.key === "ArrowDown" ? 1 : -1;
+          i = i < 0 ? (step > 0 ? 0 : items.length - 1) : (i + step + items.length) % items.length;
+          items[i].focus();
+        }
+      });
+      addEventListener("blur", hide);
+      addEventListener("resize", hide);
+      addEventListener("scroll", hide, true);
+      m.addEventListener("click", function (e) {
+        var b = e.target.closest("[data-act]");
+        if (!b) return;
+        var a = b.getAttribute("data-act");
+        if (a === "open") { hide(); return; }
+        if (a === "copy") { copy(); b.textContent = "Copied"; setTimeout(hide, 700); return; }
+        if (a === "theme") { toggleTheme(); hide(); }
+      });
+    })();
+  </script>
 </body>
 </html>
